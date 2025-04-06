@@ -1,0 +1,320 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00adb5;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #00adb5;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1rem;
+  border-left: 4px solid #00adb5;
+  border-radius: 5px;
+  transition: background-color 0.4s;
+}
+
+.dark-mode .project {
+  background: #1e1e1e;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #00adb5;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #008b8b;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #222;
+  color: white;
+  margin-top: 3rem;
+}
+
+.social-icons a {
+  color: #00adb5;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #00adb5;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #008b8b;
+}
+
+/* Home Section */
+#home {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-top: 2rem; /* Space above the section */
+}
+
+#home h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+#home p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures the video fills the container */
+  border-radius: 10px;
+}
+
+
+/* Dark Mode Style for Home Section */
+.dark-mode #home {
+  background-color: #333; /* Dark background in dark mode */
+  color: #e0e0e0; /* Light text for dark mode */
+}
+
+.dark-mode #home h2 {
+  color: #e0e0e0;
+}
+
+.dark-mode #home p {
+  color: #ccc;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: url('images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  transition: background 0.3s ease;
+}
+
+.section {
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.85); /* Light background for readability */
+  margin: 1rem auto;
+  border-radius: 15px;
+  max-width: 900px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.gallery {
+  margin-top: 1rem;
+}
+
+/* Video */
+.video-container {
+  margin-top: 2rem;
+}
+
+/* Form */
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark-mode .section {
+  background-color: rgba(20, 20, 20, 0.85);
+}
+
+body.dark-mode .navbar {
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+body.dark-mode .nav-links a {
+  color: #f0f0f0;
+}
+
+body.dark-mode form button {
+  background-color: #444;
+}
