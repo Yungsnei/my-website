@@ -330,3 +330,24 @@ body.dark-mode form button {
   color: #007bff;
   text-decoration: none;
 }
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery-img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.round {
+  border-radius: 50%;
+}
+
