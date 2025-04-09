@@ -19,10 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Toggle dark mode
-  if (toggleDarkMode) {
-    toggleDarkMode.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-    });
-  }
-});
+  

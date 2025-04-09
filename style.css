@@ -351,3 +351,28 @@ body.dark-mode form button {
   border-radius: 50%;
 }
 
+
+.navbar {
+  display: flex;
+  justify-content: center; /* This centers the nav links horizontally */
+  align-items: center;
+  background-color: #333; /* Or whatever your navbar color is */
+  padding: 15px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* space between nav items */
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00ffff; /* Techy blue hover */
+}
