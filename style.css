@@ -160,7 +160,7 @@ footer {
 }
 
 #dark-mode-toggle:hover {
-  background-color: #008b8b;
+  background-color: #30d3d3;
 }
 
 /* Home Section */
@@ -204,7 +204,7 @@ footer {
 
 /* Dark Mode Style for Home Section */
 .dark-mode #home {
-  background-color: #333; /* Dark background in dark mode */
+  background-color: #cd2626; /* Dark background in dark mode */
   color: #e0e0e0; /* Light text for dark mode */
 }
 
@@ -376,3 +376,7 @@ body.dark-mode form button {
 .nav-links li a:hover {
   color: #00ffff; /* Techy blue hover */
 }
+
+
+<link rel="stylesheet" href="style.css" /> /* project section only */
+
