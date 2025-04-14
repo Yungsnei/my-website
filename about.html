@@ -4,37 +4,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Projects</title>
+  <title>About Me</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body style="background-color: #e6d9dd;">
+
+  <!-- Navigation -->
   <nav class="navbar">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <section class="about" id="about">
-    <div class="container">
-      <h1>About Me</h1>
-      <div class="about-content">
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" />
-        <div class="bio">
-          <h2>Mercidieu Alexis</h2>
-          <p>
-            I'm a passionate IT and cybersecurity graduate with hands-on experience in building secure systems,
-            detecting vulnerabilities, and developing web-based tools. Whether it's building phishing detection systems
-            with machine learning or securing databases, I bring curiosity, creativity, and a constant desire to learn.
-          </p>
-          <p>
-            When I’m not coding or analyzing threats, I enjoy playing soccer, exploring new tech, and helping others level up their digital defense.
-          </p>
-          <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
-        </div>
-      </div>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hi, I’m <strong>Mercidieu Alexis</strong>—a passionate learner, dedicated athlete,
+       and aspiring cybersecurity professional.</p>
+    
+    <p>Since 2021, I’ve proudly played for the Trevecca Nazarene University Men’s Soccer Team,
+       where I’ve developed strong teamwork, discipline, and leadership skills. Alongside athletics,
+        I’m actively involved in various extracurricular activities that enrich my personal and professional growth.</p>
+
+    <p>My journey into IT began at the age of 14,
+       driven by a deep curiosity and fascination with cybersecurity. 
+       Inspired by the world of ethical hackers and digital defense in films and shows, 
+       my interest evolved into a clear career goal. Today, I’m pursuing a career in IT,
+        fully aware that in a world run by technology, staying informed and adaptable is key.</p>
+
+    <p>Below is a short video that captures my journey—on the field and in tech.
+       I hope it gives you a better glimpse into who I am and what drives me.</p>
+
+    <p>Thanks for visiting! Feel free to reach out through the contact section below—I’d love to connect.</p>
+
+    <!-- Embedded Video -->
+    <div class="video-container">
+      <video controls>
+        <source src="videos/mylifestory.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>My Skills</h2>
+      <ul>
+        <li>Skilled in Python, JavaScript, and SQL</li>
+        <li>Cybersecurity fundamentals & vulnerability assessment</li>
+        <li>Linux systems & command-line tools</li>
+        <li>Version control with Git/GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+   <!-- My Accomplishment Section -->
+   <section id="My Accomplishment" class="section">
+    <div class="container">
+      <h2>My Accomplishment</h2>
+      <ul>
+        <li>
+          <a href="Certificate/CertificateOfCompletion_Java Essential Training Syntax and Structure.pdf" target="_blank">
+            Certificate of Completion – Java Essential Training (Syntax and Structure)</a>
+        </li>
+        <li>
+          <a href="Certificate/CertificateOfCompletion_CompTIA CySA CS0002 Cert Prep 2 Vulnerability Management.pdf" target="_blank">
+            Certificate of Completion – CompTIA CySA+ Vulnerability Management</a>
+        </li>
+
+
+        <li>
+        <a href="Certificate/CertificateOfCompletion_CompTIA CySA CS0002 Cert Prep 1 Threat Management.pdf" target="_blank">
+          Certificate of Completion – CompTIA CySA+ Threat Management</a>
+      </li>
+
+        <li>
+        <a href="Certificate/CertificateOfCompletion_CompTIA Network N10008 Cert Prep 5 Securing TCPIP.pdf" target="_blank">
+          Certificate of Completion – CompTIA CySA+ securing TCPIP</a>
+      </li>
+
+      <li>
+        <a href="Certificate/CertificateOfCompletion_CompTIA CySA CS0002 Cert Prep 4 Software and Systems Security.pdf" target="_blank">
+          Certificate of Completion – CompTIA CySA+ Software and Systems Security</a>
+      </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mkgjpyvn" method="POST">
+      <input type="hidden" name="_next" value="https://yourwebsite.com" />
+      
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="https://www.linkedin.com/in/mercidieu-alexis-08a34a24b" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/sneider.alexis.5" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/mercidieu.alexis/" target="_blank">Instagram</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2025 Mercidieu Alexis. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
