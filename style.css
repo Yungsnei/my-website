@@ -22,7 +22,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   padding: 1rem 2rem;
   background-color: #222;
   color: #fff;
@@ -46,7 +46,7 @@ body {
 
 .hero {
   padding: 4rem 2rem;
-  text-align: center;
+  text-align: left;
   background-color: #00adb5;
   color: white;
 }
@@ -226,7 +226,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
-  background: url('images/bg.jpg') no-repeat center center fixed;
+  background: url('images/bg.jpeg') no-repeat center center fixed;
   background-size: cover;
   transition: background 0.3s ease;
 }
@@ -243,7 +243,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color:transparent;
   color: #fff;
   padding: 1rem 2rem;
   position: sticky;
@@ -384,6 +384,6 @@ body.dark-mode form button {
 <link rel="stylesheet" href="style.css" /> /* about section only */
 
 
-
+/* home page */
 
 /* about section picture */
